@@ -12,7 +12,7 @@ echo ::7) Backup Saves (Mount Storage First)
 echo ::8) Start Defult Account Shell
 echo ::Q) Quit
 echo.
-echo Thanks to carrot-c4k3, xbox one research project team, tuxuser, lllsondowlll, burninrubber0 and everyone else on the Xbox-Scene Discord
+echo Thanks to carrot-c4k3, xbox one research project team, tuxuser, lllsondowlll, Helloyunho, burninrubber0 and everyone else on the Xbox-Scene Discord
 echo.
 set /p input=Input:
 if "%input%" == "1" call :MountStorageseries
@@ -33,7 +33,8 @@ echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\mount_connectedstoragess.xml
 echo.
 Pause
-echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk18\Partition1\"
+echo Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above. 
+echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 GOTO End
 
 :MountStorageone
@@ -41,7 +42,8 @@ ECHO Mount Storage on Xbox One
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\mount_connectedstorage.xml
 echo.
-echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk18\Partition1\"
+echo Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above.
+echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 GOTO End
 
 :Tempxvd
