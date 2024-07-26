@@ -1,5 +1,6 @@
 The files here are to be put on your USB root along with dotnet 8 sdk binaries from Microsoft, and then extracted to the dotnet folder.
-After successfully triggering the Collateral Damage exploit go to d: drive by typing d: then enter, run the script by then typing run.bat
+After successfully triggering the Collateral Damage exploit on your Xbox one/Series go to d: drive by typing d: then enter, run the script by then typing run.bat
+A menu will appear with choices, simply press the number corresponding to your task and it will be automated.
 
 - 👋 Hi, I’m @Rolypoly74800
 - 👀 I’m trying to create a batch script to automate a lot of the scripts for the XBox one kernal exploit and improve it's user friendliness.
