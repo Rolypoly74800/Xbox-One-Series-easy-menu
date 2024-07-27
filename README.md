@@ -1,4 +1,4 @@
-As of 27th July 2024 this is w=very much a work in progress.
+As of 27th July 2024 this is very much a work in progress.
 
 The files here are to be put on your USB root along with dotnet 8 sdk binaries from Microsoft, and then extracted to the dotnet folder.
 After successfully triggering the Collateral Damage exploit on your Xbox one/Series go to d: drive by typing d: then enter, run the script by then typing run.bat
