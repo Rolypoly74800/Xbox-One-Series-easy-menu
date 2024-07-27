@@ -36,6 +36,7 @@ echo.
 echo Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above. 
 echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 echo.
+echo Once you have entered command above type run.bat to reload the menu.
 Pause
 exit 0
 
@@ -47,6 +48,7 @@ echo.
 echo Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above.
 echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 echo.
+echo Once you have entered command above type run.bat to reload the menu.
 Pause
 exit 0
 
