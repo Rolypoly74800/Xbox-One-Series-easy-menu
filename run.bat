@@ -8,7 +8,7 @@ echo ::1) Mount Storage (Series Console)
 echo ::2) Mount Storage (One Console)
 echo ::3) Get Temp XVD Owner (Warning - needs fix does not exit command)
 echo ::4) Backup XBFS (Important file)
-echo ::5) Allow Emulators (Only needs to be run once)
+echo ::5) Allow Emulators (Only needs to be run once, gives 1 error but seems to work)
 echo ::6) Backup Licences to USB:\Licenses
 echo ::7) Backup Saves (Mount Storage First)
 echo ::8) Start Defult Account Shell
@@ -88,6 +88,7 @@ for /R /D %%d in (.\*) do (
 for /R %%f in (.\*) do (
     copy %%f D:\xb1\saves%%~pnxf
 )
+d:
 GOTO :mainmenu
 
 :Dashell
