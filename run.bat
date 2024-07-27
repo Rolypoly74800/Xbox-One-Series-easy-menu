@@ -11,7 +11,6 @@ echo ::4) Backup XBFS (Important file)
 echo ::5) Allow Emulators (Only needs to be run once, gives 1 error but seems to work)
 echo ::6) Backup Licences to USB:\Licenses
 echo ::7) Backup Saves (Mount Storage First)
-echo ::8) Start Defult Account Shell
 echo ::Q) Quit
 echo.
 echo Thanks to carrot-c4k3, xbox one research project team, tuxuser, lllsondowlll, Helloyunho, burninrubber0 and everyone else on the Xbox-Scene Discord
@@ -24,7 +23,6 @@ if "%input%" == "4" call :xbfsbackup
 if "%input%" == "5" call :allowemu
 if "%input%" == "6" call :sclip
 if "%input%" == "7" call :Dumpsaves
-if "%input%" == "8" call :Dashell
 if "%input%" == "Q" exit /b 0
 if "%input%" == "q" exit /b 0
 
@@ -53,7 +51,7 @@ echo :::: Once you have entered command above type run.bat to reload the menu.
 exit /b
 
 :Tempxvd
-ECHO Get Temp XVD Owner (gets XVD but but will not exit out of command, need a fix)
+ECHO Get Temp XVD Owner
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\get_tempxvd_owners.xml
 GOTO :mainmenu
@@ -89,15 +87,6 @@ for /R %%f in (.\*) do (
     copy %%f D:\xb1\saves%%~pnxf
 )
 d:
-GOTO :mainmenu
-
-:Dashell
-ECHO IMPORTANT = Open a second command prompt and listen on port 1337 before continuing.
-echo.
-Pause
-echo.
-schtasks /create /f /tn "DAShell" /ru DefaultAccount /sc ONSTART /tr "D:\dotnet\dotnet.exe msbuild D:\msbuild_tasks\shell.xml"
-schtasks /run /tn "DAShell"
 GOTO :mainmenu
 
 :End
