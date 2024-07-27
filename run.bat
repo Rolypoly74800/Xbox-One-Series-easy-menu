@@ -6,7 +6,7 @@ echo Input Options:
 echo.
 echo ::1) Mount Storage (Series Console)
 echo ::2) Mount Storage (One Console)
-echo ::3) Get Temp XVD Owner (Warning - needs fix does not exit command)
+echo ::3) Get Temp XVD Owner
 echo ::4) Backup XBFS (Important file)
 echo ::5) Allow Emulators (Only needs to be run once, gives 1 error but seems to work)
 echo ::6) Backup Licences to USB:\Licenses
