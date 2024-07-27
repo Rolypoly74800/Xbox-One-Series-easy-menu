@@ -72,15 +72,16 @@ GOTO End
 
 :sclip
 ECHO Backup Licenses
-mkdir D:\Licenses
+IF NOT EXIST D:\Licenses (
+    MKDIR D:\Licenses
+)
 copy s:\clip\*.* D:\Licenses
 GOTO End
 
 :DumpSaves
 ECHO Dump Saves (Credit to burninrubber0 on Discord)
 echo.
-cd t:\connectedstorage
-t:
+cd /d t:\connectedstorage
 for /R /D %%d in (.\*) do (
     mkdir D:\xb1\saves%%~pnxd
 )
