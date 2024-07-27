@@ -33,10 +33,10 @@ ECHO Mount Storage on Xbox Series
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\mount_connectedstoragess.xml
 echo.
-echo Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above. 
-echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
+echo :::: Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above. 
+echo :::: mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 echo.
-echo Once you have entered command above type run.bat to reload the menu.
+echo :::: Once you have entered command above type run.bat to reload the menu.
 Pause
 exit 0
 
@@ -45,10 +45,10 @@ ECHO Mount Storage on Xbox One
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\mount_connectedstorage.xml
 echo.
-echo Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above.
-echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
+echo :::: Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above.
+echo :::: mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 echo.
-echo Once you have entered command above type run.bat to reload the menu.
+echo :::: Once you have entered command above type run.bat to reload the menu.
 Pause
 exit 0
 
