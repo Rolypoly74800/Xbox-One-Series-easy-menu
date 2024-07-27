@@ -37,7 +37,7 @@ echo Please observe the outputted harddisk number and type the command below rep
 echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 echo.
 Pause
-exit /b 0
+exit /b
 
 :MountStorageone
 ECHO Mount Storage on Xbox One
@@ -48,7 +48,7 @@ echo Please observe the outputted harddisk number and type the command below rep
 echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 echo.
 Pause
-exit /b 0
+exit /b
 
 :Tempxvd
 ECHO Get Temp XVD Owner (gets XVD but but will not exit out of command, need a fix)
