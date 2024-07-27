@@ -1,6 +1,7 @@
 ECHO OFF
 
 :MainMenu
+
 echo Input Options:
 echo.
 echo ::1) Mount Storage (Series Console)
@@ -26,7 +27,8 @@ if "%input%" == "7" call :Dumpsaves
 if "%input%" == "8" call :Dashell
 if "%input%" == "Q" exit /b 0
 if "%input%" == "q" exit /b 0
-goto :MainMenu
+
+exit /b
 
 :MountStorageseries
 ECHO Mount Storage on Xbox Series
@@ -37,8 +39,7 @@ echo :::: Please observe the outputted harddisk number and type the command belo
 echo :::: mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 echo.
 echo :::: Once you have entered command above type run.bat to reload the menu.
-Pause
-exit 0
+exit /b
 
 :MountStorageone
 ECHO Mount Storage on Xbox One
@@ -49,8 +50,7 @@ echo :::: Please observe the outputted harddisk number and type the command belo
 echo :::: mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 echo.
 echo :::: Once you have entered command above type run.bat to reload the menu.
-Pause
-exit 0
+exit /b
 
 :Tempxvd
 ECHO Get Temp XVD Owner (gets XVD but but will not exit out of command, need a fix)
