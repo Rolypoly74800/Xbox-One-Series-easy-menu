@@ -37,7 +37,7 @@ echo Please observe the outputted harddisk number and type the command below rep
 echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
 echo.
 Pause
-goto :eof
+close
 
 :MountStorageone
 ECHO Mount Storage on Xbox One
