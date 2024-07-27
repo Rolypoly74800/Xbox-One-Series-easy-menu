@@ -10,7 +10,7 @@ echo ::3) Get Temp XVD Owner
 echo ::4) Backup XBFS (Important file)
 echo ::5) Allow Emulators (Only needs to be run once, gives 1 error but seems to work)
 echo ::6) Backup Licences to USB:\Licenses
-echo ::7) Backup Saves (Mount Storage First)
+echo ::7) Backup Saves to USB (Mount Storage First)
 echo ::Q) Quit
 echo.
 echo Thanks to carrot-c4k3, xbox one research project team, tuxuser, lllsondowlll, Helloyunho, burninrubber0 and everyone else on the Xbox-Scene Discord
