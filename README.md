@@ -9,9 +9,9 @@ A menu will appear with choices, simply press the number corresponding to your t
 - I appreciate the help and currently am on the Xbox-Scene discord @rolypoly, my intentions are not to steal any code or files.
 - This is my first project and there are some files here that belong to others and I will try my best to credit them.
 - Ultimately I wish to have a zip file that beginners download and run a batch menu to do what is needed.
-Credit goes to carrot-c4k3 for the collatoral damage exploit
-Xbox one research project team, tuxuser, lllsondowlll for the XML scripts included
-Helloyunho, burninrubber0 and the Xbox-Scene discord
+- Credit goes to carrot-c4k3 for the collatoral damage exploit
+- Xbox one research project team, tuxuser, lllsondowlll for the XML scripts included
+- Helloyunho, burninrubber0 and the Xbox-Scene discord
 
 It would be great if some can automate the mklink command for mount storage option, I need it to output mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk18\Partition1\".
 I need the harddisk number to match the one outputted by the mount_connectedstorage.xml in the msbuild_tasks folder.
