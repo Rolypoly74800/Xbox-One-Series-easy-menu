@@ -5,8 +5,8 @@ After successfully triggering the Collateral Damage exploit on your Xbox one/Ser
 A menu will appear with choices, simply press the number corresponding to your task and it will be automated.
 
 - 👋 Hi, I’m @Rolypoly74800
-- 👀 I’m trying to create a batch script to automate a lot of the scripts for the XBox one kernal exploit and improve it's user friendliness.
-- I appreciate the help and currently am on the Xbox-Scene discord @rolypoly, my intentions are not to steal any code or files.
+- 👀 I’m trying to create a batch script to automate a lot of the scripts for the Xbox One/Series kernal exploit and improve it's user friendliness.
+- I appreciate the help and currently I am on the Xbox-Scene discord @rolypoly, my intentions are not to steal any code or files.
 - This is my first project and there are some files here that belong to others and I will try my best to credit them.
 - Ultimately I wish to have a zip file that beginners download and run a batch menu to do what is needed.
 - Credit goes to carrot-c4k3 for the collatoral damage exploit
