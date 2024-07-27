@@ -1,5 +1,5 @@
 ECHO OFF
-set DOTNET_CLI_TELEMETRY_OPTOUT=1 rem thankyou Emma 2/IPG (NOT THE OTHER EMMA)
+
 :MainMenu
 echo Input Options:
 echo.
