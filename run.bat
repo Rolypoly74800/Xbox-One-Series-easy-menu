@@ -56,19 +56,19 @@ exit /b
 ECHO Get Temp XVD Owner (gets XVD but but will not exit out of command, need a fix)
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\get_tempxvd_owners.xml
-GOTO End
+GOTO :mainmenu
 
 :xbfsbackup
 ECHO Perform XBFS Backup
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\xbfs_backup.xml
-GOTO End
+GOTO :mainmenu
 
 :allowemu
 ECHO Allow Emulators (unsure if it works properly)
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\allow_emulators.xml
-GOTO End
+GOTO :mainmenu
 
 :sclip
 ECHO Backup Licenses
@@ -76,7 +76,7 @@ IF NOT EXIST D:\Licenses (
     MKDIR D:\Licenses
 )
 copy s:\clip\*.* D:\Licenses
-GOTO End
+GOTO :mainmenu
 
 :DumpSaves
 ECHO Dump Saves (Credit to burninrubber0 on Discord)
@@ -88,7 +88,7 @@ for /R /D %%d in (.\*) do (
 for /R %%f in (.\*) do (
     copy %%f D:\xb1\saves%%~pnxf
 )
-GOTO End
+GOTO :mainmenu
 
 :Dashell
 ECHO IMPORTANT = Open a second command prompt and listen on port 1337 before continuing.
@@ -97,6 +97,6 @@ Pause
 echo.
 schtasks /create /f /tn "DAShell" /ru DefaultAccount /sc ONSTART /tr "D:\dotnet\dotnet.exe msbuild D:\msbuild_tasks\shell.xml"
 schtasks /run /tn "DAShell"
-GOTO End
+GOTO :mainmenu
 
 :End
