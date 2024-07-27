@@ -33,10 +33,11 @@ ECHO Mount Storage on Xbox Series
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\mount_connectedstoragess.xml
 echo.
-Pause
 echo Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above. 
 echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
-GOTO End
+echo.
+Pause
+exit /b 0
 
 :MountStorageone
 ECHO Mount Storage on Xbox One
@@ -45,7 +46,9 @@ d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\mount_connectedstorage.xml
 echo.
 echo Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above.
 echo mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
-GOTO End
+echo.
+Pause
+exit /b 0
 
 :Tempxvd
 ECHO Get Temp XVD Owner (gets XVD but but will not exit out of command, need a fix)
