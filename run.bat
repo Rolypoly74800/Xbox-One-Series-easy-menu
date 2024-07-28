@@ -26,29 +26,23 @@ if "%input%" == "7" call :Dumpsaves
 if "%input%" == "Q" exit /b 0
 if "%input%" == "q" exit /b 0
 
-exit /b
-
 :MountStorageseries
 ECHO Mount Storage on Xbox Series
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\mount_connectedstoragess.xml
 echo.
-echo :::: Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above. 
-echo :::: mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
-echo.
-echo :::: Once you have entered command above type run.bat to reload the menu.
-exit /b
+set /p input=Please type the harddrive number only you see above in the field Device\Harddisk##\Partition1=
+mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk%input%\Partition1\"
+GOTO :mainmenu
 
 :MountStorageone
 ECHO Mount Storage on Xbox One
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\mount_connectedstorage.xml
 echo.
-echo :::: Please observe the outputted harddisk number and type the command below replace ## with the harddisk number above.
-echo :::: mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk##\Partition1\"
-echo.
-echo :::: Once you have entered command above type run.bat to reload the menu.
-exit /b
+set /p input=Please type the harddrive number only you see above in the field Device\Harddisk##\Partition1=
+mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk%input%\Partition1\"
+GOTO :mainmenu
 
 :Tempxvd
 ECHO Get Temp XVD Owner
