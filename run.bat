@@ -27,7 +27,7 @@ if "%input%" == "q" exit /b 0
 goto :MainMenu
 
 :MountStorage
-ECHO Mount Storage on Xbox Series
+ECHO Mount Storage
 echo.
 %pwd%\dotnet\dotnet.exe msbuild %pwd%\msbuild_tasks\mount_connectedstorage.xml
 echo.
