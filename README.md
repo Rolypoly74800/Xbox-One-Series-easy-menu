@@ -2,13 +2,13 @@ The files here are to be put on your USB root, download dotnet 8 sdk binaries fr
 After successfully triggering the Collateral Damage exploit on your Xbox one/Series go to d: drive by typing d: then enter, run the script by then typing run.bat
 A menu will appear with choices, simply press the number corresponding to your task and it will be automated.
 
-Working Scripts
-1: Mount Drive to t:\connectedstorage
-2: Get TempXVD onwer
-2. Backup XBFS (Important file)
-4. Allow Emulators (Only needs to be run once, registry mod)
-5. Backup Licences to USB:\Licenses
-6. Backup Saves to USB (Mount Storage First)
+-Working Scripts
+-1: Mount Drive to t:\connectedstorage
+-2: Get TempXVD onwer
+-3. Backup XBFS (Important file)
+-4. Allow Emulators (Only needs to be run once, registry mod)
+-5. Backup Licences to USB:\Licenses
+-6. Backup Saves to USB (Mount Storage First)
 
 WIP
 Install UWP app
