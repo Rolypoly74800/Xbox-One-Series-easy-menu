@@ -1,5 +1,5 @@
 ECHO OFF
-
+set DOTNET_CLI_TELEMETRY_OPTOUT=1
 set pwd=%cd%
 
 :MainMenu
