@@ -1,4 +1,4 @@
-The files here are to be put on your USB root along with dotnet 8 sdk binaries from Microsoft, extract the dotnet 8 binaries into the dotnet folder.
+The files here are to be put on your USB root, inside the dotnet forlder is a zip file with dotnet 8 sdk binaries from Microsoft, extract the dotnet 8 binaries into the dotnet folder.
 After successfully triggering the Collateral Damage exploit on your Xbox one/Series go to d: drive by typing d: then enter, run the script by then typing run.bat
 A menu will appear with choices, simply press the number corresponding to your task and it will be automated.
 
