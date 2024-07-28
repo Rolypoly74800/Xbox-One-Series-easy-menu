@@ -31,7 +31,7 @@ ECHO Mount Storage on Xbox Series
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\mount_connectedstoragess.xml
 echo.
-set /p input=Please type the harddrive number only you see above in the field Device\Harddisk##\Partition1=
+set /p input=Please type the harddisk number only you see above in the field Device\Harddisk##\Partition1=
 mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk%input%\Partition1\"
 GOTO :mainmenu
 
@@ -40,7 +40,7 @@ ECHO Mount Storage on Xbox One
 echo.
 d:\dotnet\dotnet.exe msbuild d:\msbuild_tasks\mount_connectedstorage.xml
 echo.
-set /p input=Please type the harddrive number only you see above in the field Device\Harddisk##\Partition1=
+set /p input=Please type the harddisk number only you see above in the field Device\Harddisk##\Partition1=
 mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk%input%\Partition1\"
 GOTO :mainmenu
 
