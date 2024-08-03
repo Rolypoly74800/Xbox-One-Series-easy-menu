@@ -23,8 +23,8 @@ Install UWP app
 - Xbox one research project team, tuxuser, lllsondowlll for the XML scripts included
 - Helloyunho, burninrubber0 and the Xbox-Scene discord
 
-It would be great if some can automate the mklink command for mount storage option, I need it to output mklink /j T:\connectedStorage "\\?\GLOBALROOT\Device\Harddisk18\Partition1\".
-I need the harddisk number to match the one outputted by the mount_connectedstorage.xml in the msbuild_tasks folder.
+FAQ
+Savegame folder structure is u_XUID_TITLEID
 <!---
 Rolypoly74800/Rolypoly74800 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 You can click the Preview link to take a look at your changes.
