@@ -8,9 +8,8 @@ echo.
 echo ::1) Mount Storage
 echo ::2) Get Temp XVD Owner
 echo ::3) Backup XBFS (Important file)
-echo ::4) Allow Emulators (Only needs to be run once)
-echo ::5) Backup Licences to USB:\Licenses
-echo ::6) Backup Saves to USB (Mount Storage First)
+echo ::4) Backup Licences to USB:\Licenses
+echo ::5) Backup Saves to USB (Mount Storage First)
 echo ::Q) Quit
 echo.
 echo Thanks to carrot-c4k3, xbox one research project team, tuxuser, lllsondowlll, burninrubber0, Helloyunho and everyone else on the Xbox-Scene Discord
@@ -19,9 +18,8 @@ set /p input=Input:
 if "%input%" == "1" call :MountStorage
 if "%input%" == "2" call :Tempxvd
 if "%input%" == "3" call :xbfsbackup
-if "%input%" == "4" call :allowemu
-if "%input%" == "5" call :sclip
-if "%input%" == "6" call :Dumpsaves
+if "%input%" == "4" call :sclip
+if "%input%" == "5" call :Dumpsaves
 if "%input%" == "Q" exit /b 0
 if "%input%" == "q" exit /b 0
 goto :MainMenu
@@ -45,12 +43,6 @@ GOTO End
 ECHO Perform XBFS Backup
 echo.
 %pwd%\dotnet\dotnet.exe msbuild %pwd%\msbuild_tasks\xbfs_backup.xml
-GOTO End
-
-:allowemu
-ECHO Allow Emulators (unsure if it works properly)
-echo.
-%pwd%\dotnet\dotnet.exe msbuild %pwd%\msbuild_tasks\allow_emulators.xml
 GOTO End
 
 :sclip
