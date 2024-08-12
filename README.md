@@ -23,6 +23,9 @@ Install UWP app
 - Xbox one research project team, tuxuser, lllsondowlll for the XML scripts included
 - Helloyunho, burninrubber0 and the Xbox-Scene discord
 
+Dotnet 6 SDK link
+https://dotnet.microsoft.com/en-us/download/dotnet/thank-you/sdk-6.0.424-windows-x64-binaries
+
 FAQ
 Savegame folder structure is u_XUID_TITLEID
 <!---
